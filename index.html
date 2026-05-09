@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+  <title>TynecXio | Premium Portfolio Builder</title>
+  <meta name="description" content="Professional portfolio websites starting from ৳1499. Get your modern, mobile-responsive portfolio today.">
+  
+  <!-- Favicon -->
+<link rel="icon" type="image/jpeg" href="/lead form-TynecXio/tynecxio.logo.jpg">
+<link rel="shortcut icon" type="image/jpeg" href="/lead form-TynecXio/tynecxio.logo.jpgd:\Downloads-C\tynecxio.logo.jpg">
+  
+  <!-- EmailJS CDN -->
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+  
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,300;14..32,400;14..32,500;14..32,600;14..32,700;14..32,800&display=swap" rel="stylesheet">
+  
+  <!-- Font Awesome 6 (Free Icons) -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  
+  <!-- Stylesheet -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- Premium Animated Background -->
+  <div class="bg-gradient"></div>
+  <div class="bg-blur-circles">
+    <div class="blur-circle circle-1"></div>
+    <div class="blur-circle circle-2"></div>
+    <div class="blur-circle circle-3"></div>
+  </div>
+
+  <main class="container">
+    <!-- Premium Nav / Logo -->
+    <div class="premium-nav">
+      <div class="logo-wrapper">
+  <div class="logo-icon" style="padding: 0; overflow: hidden; border-radius: 60%; width: 62px; height: 62px;">
+    <img src="/lead form-TynecXio/tynecxio.logo.jpg" alt="TynecXio Logo" style="width: 100%; height: 100%; object-fit: cover;">
+  </div>
+  <span class="logo-text">Tynec<span>Xio</span></span>
+</div>
+      <div class="trust-badge">
+        <i class="fas fa-shield-alt"></i> <span>Trusted by 500+ creatives</span>
+      </div>
+    </div>
+
+    <!-- Hero Section Premium -->
+    <div class="hero-premium">
+      <div class="hero-badge">
+        <span class="badge-pulse"></span>
+        <span>✨ Professional Portfolio Service</span>
+      </div>
+      <h1 class="hero-main-title">
+        Build Your <span class="gradient-text">Professional Portfolio</span> Presence
+      </h1>
+      <p class="hero-description">
+        Get a modern, mobile responsive portfolio website to showcase your skills, projects, and personal brand.
+      </p>
+      <div class="price-panel">
+        <div class="price-card">
+          <span class="price-label">Starting From Only</span>
+          <div class="price-value">৳1499 <span class="price-period">/ one-time</span></div>
+          <div class="price-feature">✔ Fully responsive design</div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Premium Lead Form Card -->
+    <div class="form-premium-card">
+      <div class="card-header">
+        <div class="header-icon">
+          <i class="fas fa-pen-fancy"></i>
+        </div>
+        <h2>Request Your Portfolio Quote</h2>
+        <p>Fill in the details and our team will craft your digital presence</p>
+      </div>
+
+      <form id="leadForm" novalidate>
+        <div class="form-row two-col">
+          <div class="input-group">
+            <label><i class="fas fa-user"></i> Full Name <span class="required-star">*</span></label>
+            <input type="text" id="fullname" name="fullname" placeholder="e.g., Sarah Ahmed" autocomplete="name" required>
+            <div class="error-msg" data-for="fullname"></div>
+          </div>
+          <div class="input-group">
+            <label><i class="fas fa-envelope"></i> Email Address <span class="required-star">*</span></label>
+            <input type="email" id="email" name="email" placeholder="sarah@example.com" autocomplete="email" required>
+            <div class="error-msg" data-for="email"></div>
+          </div>
+        </div>
+
+        <div class="form-row two-col">
+          <div class="input-group">
+            <label><i class="fas fa-phone-alt"></i> Phone Number <span class="required-star">*</span></label>
+            <input type="tel" id="phone" name="phone" placeholder="+880 1XXX XXXXXX" autocomplete="tel" required>
+            <div class="error-msg" data-for="phone"></div>
+          </div>
+          <div class="input-group">
+            <label><i class="fas fa-briefcase"></i> Profession / Current Role <span class="required-star">*</span></label>
+            <input type="text" id="profession" name="profession" placeholder="UX Designer, Developer, Freelancer" required>
+            <div class="error-msg" data-for="profession"></div>
+          </div>
+        </div>
+
+        <div class="input-group">
+          <label><i class="fas fa-globe"></i> What type of website do you need? <span class="required-star">*</span></label>
+          <div class="select-wrapper">
+            <select id="websiteType" name="websiteType" required>
+              <option value="" disabled selected>– Select your project type –</option>
+              <option value="Portfolio Website">🎨 Portfolio Website</option>
+              <option value="Business Website">🏢 Business Website</option>
+              <option value="Landing Page">📈 Landing Page</option>
+              <option value="Other">🔮 Other (Custom request)</option>
+            </select>
+            <i class="fas fa-chevron-down select-arrow"></i>
+          </div>
+          <div class="error-msg" data-for="websiteType"></div>
+        </div>
+
+        <div class="input-group">
+          <label><i class="fas fa-comment-dots"></i> Message / Requirements <span class="optional-tag">Optional</span></label>
+          <textarea id="message" name="message" rows="3" placeholder="Tell us about your vision, specific features, color preferences, or project goals..."></textarea>
+        </div>
+
+        <button type="submit" id="submitBtn" class="btn-premium">
+          <span class="btn-text">Submit Request <i class="fas fa-arrow-right"></i></span>
+          <span class="btn-loader hidden"></span>
+        </button>
+
+        <div id="formStatus" class="form-status hidden"></div>
+      </form>
+
+      <div class="premium-footer-note">
+        <div class="footer-item">
+          <i class="fas fa-lock"></i> Secure & Confidential
+        </div>
+        <div class="footer-item">
+          <i class="fas fa-clock"></i> 24h response time
+        </div>
+        <div class="footer-item">
+          <i class="fas fa-code"></i> Modern tech stack
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <script src="app.js"></script>
+</body>
+</html>
