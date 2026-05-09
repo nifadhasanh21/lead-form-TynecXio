@@ -1,7 +1,7 @@
 // ========== EMAILJS CONFIGURATION (Replace with your own keys) ==========
-const EMAILJS_SERVICE_ID = "YOUR_SERVICE_ID";      // e.g., "service_xxx"
-const EMAILJS_TEMPLATE_ID = "YOUR_TEMPLATE_ID";    // e.g., "template_xxx"
-const EMAILJS_PUBLIC_KEY = "YOUR_PUBLIC_KEY";      // e.g., "user_xxx"
+const EMAILJS_SERVICE_ID = "service_dptm6ro";      // e.g., "service_xxx"
+const EMAILJS_TEMPLATE_ID = "template_l59z7q7";    // e.g., "template_xxx"
+const EMAILJS_PUBLIC_KEY = "6dJruAW1E6Lei_Oe9";      // e.g., "user_xxx"
 
 // Initialize EmailJS
 (function initEmailJS() {
